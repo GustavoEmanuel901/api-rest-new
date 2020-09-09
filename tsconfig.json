@@ -9,7 +9,7 @@
     "removeComments": true,                
     "typeRoots": [
       "./node_modules/@types",
-      "./src/@types"
+      "src/@types"
     ],                       
     "esModuleInterop": true,                     
     "resolveJsonModule": true,
@@ -19,12 +19,13 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@controllers/*": ["./src/controllers/*"],
-      "@models/*": ["./src/models/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@repositories/*": ["./src/repositories/*"],
+      "@entities/*": ["src/entities/*"],
+      "@UseCases/*": ["src/UseCases/*"],
+      "@providers/*": ["src/providers/*"]
     }  
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
   ]
 }

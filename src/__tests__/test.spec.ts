@@ -1,4 +1,4 @@
-import { User } from '../models/User'
+import { User } from 'src/entities/User'
 
 test('it should be ok', () => {
   const user = new User()
